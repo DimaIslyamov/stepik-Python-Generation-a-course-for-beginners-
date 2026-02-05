@@ -51,5 +51,21 @@ if dog_years <= 2:
     human_years = dog_years * 10.5
 else:
     human_years = 21 + (dog_years - 2) * 4
-    
+
 print(human_years)
+
+
+
+# Первая цифра после точки
+num = float(input())
+first_decimal_digit = int((num * 10) % 10)
+print(first_decimal_digit)
+
+
+
+# Дробная часть
+num = float(input())
+fractional_part = num - int(num)
+print(fractional_part)
+
+
