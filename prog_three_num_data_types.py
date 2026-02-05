@@ -27,6 +27,7 @@ print(time)
 
 # Обратное число 🙃
 num = float(input())
+
 if num != 0:
     reciprocal = 1 / num
     print(reciprocal)
@@ -69,3 +70,68 @@ fractional_part = num - int(num)
 print(fractional_part)
 
 
+
+# Наибольшее и наименьшее
+vl_onem, vl_two, vl_three, vl_four, vl_five = int(input()), int(input()), int(input()), int(input()), int(input())
+
+total_volume = vl_onem + vl_two + vl_three + vl_four + vl_five
+
+print(f"Наименьшее число = {min(vl_onem, vl_two, vl_three, vl_four, vl_five)}")
+print(f"Наибольшее число = {max(vl_onem, vl_two, vl_three, vl_four, vl_five)}")
+
+
+
+# Абсолютная сумма
+a1 = float(input())
+a2 = float(input())
+a3 = float(input())
+a4 = float(input())
+a5 = float(input())
+
+result = abs(a1) + abs(a2) + abs(a3) + abs(a4) + abs(a5)
+print(result)
+
+
+
+# Интересное число 🤔
+n = int(input())
+
+a = n // 100
+b = (n // 10) % 10
+c = n % 10
+
+mn = min(a, b, c)
+mx = max(a, b, c)
+mid = a + b + c - mn - mx
+
+if mx - mn == mid:
+    print("Число интересное")
+else:
+    print("Число неинтересное")
+
+
+
+# Сортировка трёх чисел 🔢
+a = int(input())
+b = int(input())
+c = int(input())
+
+min_val = min(a, b, c)
+max_val = max(a, b, c)
+mid_val = a + b + c - min_val - max_val
+
+print(min_val)
+print(mid_val)
+print(max_val)
+
+
+
+# Манхэттенское расстояние 🗽
+p1 = int(input())
+p2 = int(input())
+q1 = int(input())
+q2 = int(input())
+
+manhattan_distance = abs(p1 - q1) + abs(p2 - q2)
+
+print(manhattan_distance)
