@@ -130,3 +130,25 @@ for minute in range(start, end + 1):
     m = minute % 60
     print(f"{h:02}:{m:02}")
 
+# Решение без перевода в минуты
+h1 = int(input())
+m1 = int(input())
+h2 = int(input())
+m2 = int(input())
+
+while True:
+    print(f"{h1:02}:{m1:02}")
+    
+    if h1 == h2 and m1 == m2:
+        break
+    
+    m1 += 1
+    
+    if m1 == 60:
+        m1 = 0
+        h1 += 1
+
+
+
+
+
