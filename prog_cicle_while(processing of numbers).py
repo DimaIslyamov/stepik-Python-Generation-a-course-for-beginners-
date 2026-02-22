@@ -67,3 +67,73 @@ print(product)
 print(sum_digits / count)
 print(first_digit)
 print(first_digit + last_digit)
+
+
+
+# Вторая цифра
+num = int(input())
+
+while num >= 100:
+    num //= 10
+
+second_digit = num % 10
+
+print(second_digit)
+
+
+
+# Одинаковые цифры
+num = int(input())
+
+last_digit = num % 10
+num //= 10
+
+while num > 0:
+    digit = num % 10
+
+    if digit != last_digit:
+        print("NO")
+        break
+    num //= 10
+else:    
+    print("YES")
+
+
+
+# Цифры в порядке неубывания
+n = int(input())
+
+prev = n % 10
+n //= 10
+
+while n > 0:
+    digit = n % 10
+    
+    if digit < prev:
+        print("NO")
+        break
+        
+    prev = digit
+    n //= 10
+else:
+    print("YES")
+
+
+
+# Количество четных цифр
+n = input()
+
+i = 0
+count = 0
+
+while i < len(n):
+    digit = int(n[i])
+    
+    if digit % 2 == 0:
+        count += 1
+        print(f"{count}-я четная цифра равна {digit}")
+    
+    i += 1
+
+if count == 0:
+    print("Четных цифр в числе нет")
